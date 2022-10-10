@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 type Props = {
   children: React.ReactNode;
   rootSelector: string;
-}
+};
 
 const Portal: React.FC<Props> = ({ rootSelector, children }) => {
   const element = useRef(document.getElementById(rootSelector));
